@@ -33,8 +33,10 @@ module.exports = {
       node: {
         extensions: ['.tsx', '.ts', '.js', '.json'],
       },
+      typescript: {},
     },
   },
+
   plugins: ['react', 'unicorn', 'promise', '@typescript-eslint'],
   rules: {
     // 具体添加的其他规则大家可查看我的 github 查看

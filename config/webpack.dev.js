@@ -1,8 +1,10 @@
+const webpack = require('webpack')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common.js')
 const { SERVER_HOST, SERVER_PORT } = require('./constant.js')
 module.exports = merge(common, {
   mode: 'development',
+  devtool: 'eval-source-map',
   devServer: {
     static: '../dist',
     host: SERVER_HOST, // 指定 host，不设置的话默认是 localhost
@@ -13,4 +15,5 @@ module.exports = merge(common, {
     open: true, // 打开默认浏览器
     hot: true, // 热更新
   },
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 })
