@@ -1,2 +1,2 @@
-import { add } from './hello'
-console.log(add)
+const root = document.querySelector('#root')
+root.innerHTML = 'hello, webpack!'
