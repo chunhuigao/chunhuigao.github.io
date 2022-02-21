@@ -5,11 +5,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Home from './Home.tsx'
 function App() {
-  return (
-    <div>
-      React <Home />
-    </div>
-  )
+  return <div>个人博客测试版本</div>
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
