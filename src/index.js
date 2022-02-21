@@ -1,11 +1,11 @@
-import './style.css'
-import './style.scss'
-
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './Home.tsx'
-function App() {
-  return <div>个人博客测试版本</div>
-}
+import { BrowserRouter } from 'react-router-dom'
+import App from './App.tsx'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root'),
+)
