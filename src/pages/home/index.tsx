@@ -5,7 +5,7 @@ type Props = {}
 export default function Index({}: Props) {
   return (
     <div>
-      Home 21321
+      个人博客测试版本
       <Link to="/about">about</Link>
     </div>
   )
