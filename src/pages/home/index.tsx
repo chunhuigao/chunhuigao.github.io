@@ -2,11 +2,11 @@ import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 type Props = {}
 
-export default function Index({}: Props) {
+export default function Index(props: Props) {
+  console.log('this.props', props)
   return (
     <div>
-      个人博客测试版本
-      <Link to="/about">about</Link>
+      <header className="color-primary flex-center">新建于2022</header>
     </div>
   )
 }
