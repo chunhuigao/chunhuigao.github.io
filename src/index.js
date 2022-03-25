@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, HashRouter } from 'react-router-dom'
-import App from './App.tsx'
-import './utils/style/index.less'
+import Home from './Home/index.jsx'
+import List from './List/index.tsx'
+import './utils/style/index.scss'
+import 'antd/dist/antd.less'
+export default function Index() {
+  return <div>博客测试</div>
+}
 
-ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
-  document.getElementById('root'),
-)
+const root = document.getElementById('root')
+// root.textContent = "webpackwqewq2"
+ReactDOM.render(<Index />, root)
