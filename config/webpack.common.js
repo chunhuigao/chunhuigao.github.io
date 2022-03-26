@@ -20,8 +20,8 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, '../index.html'),
-      filename: 'index.html',
+      template: path.join(__dirname, '../template.html'),
+      filename: '../index.html',
     }),
     new WebpackBar(),
     new MiniCssPlugin(),
